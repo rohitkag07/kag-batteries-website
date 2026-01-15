@@ -49,29 +49,9 @@ export default function Footer() {
             <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-gray-300">
               Contact
             </h3>
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li className="flex items-start gap-3">
-                <span className="text-base mt-0.5">📍</span>
-                <span>
-                  B-3, AKVN Industrial Area,<br />
-                  Rangwasa, Indore (M.P.) 453310
-                </span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-base mt-0.5">📞</span>
-                <div className="flex flex-col gap-1">
-                  <a href="tel:+919826918636" className="hover:text-white transition">+91 98269 18636</a>
-                  <a href="tel:+919752256636" className="hover:text-white transition">+91 97522 56636</a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-base mt-0.5">✉️</span>
-                <div className="flex flex-col gap-1">
-                  <a href="mailto:info@kaveryled.in" className="hover:text-white transition">info@kaveryled.in</a>
-                  <a href="mailto:sales@kaveryled.in" className="hover:text-white transition">sales@kaveryled.in</a>
-                </div>
-              </li>
-            </ul>
+            <p className="text-gray-400 text-sm">
+              Email / phone details you want to show can be placed here.
+            </p>
           </div>
         </div>
 

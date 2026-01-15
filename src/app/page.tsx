@@ -5,7 +5,7 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Products from "./components/product";
 import ProductBrochures from "./components/ProductBrochures";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/gallery";
 import Features from "./components/features";
 import Testimonials from "./components/testimonials";
 import Contact from "./components/Contact";
