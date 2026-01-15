@@ -12,7 +12,7 @@ export default function Contact() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -20,7 +20,7 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // यहाँ API call करो या email service use करो
     console.log('Form submitted:', formData);
@@ -42,10 +42,10 @@ export default function Contact() {
           {/* Contact Form */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Enquiry</h3>
-            
+
             {submitted && (
               <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                ✅ Thank you! We'll get back to you soon.
+                ✅ Thank you! We&apos;ll get back to you soon.
               </div>
             )}
 
@@ -91,7 +91,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-600 focus:ring-2 focus:ring-green-100"
-                  placeholder="+91 7869161842"
+                  placeholder="+91 9826918636"
                 />
               </div>
 
@@ -158,9 +158,14 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">Phone</h4>
-                  <a href="tel:+919109162999" className="text-green-600 hover:text-green-700 font-semibold">
-                    +91 91091 62999
-                  </a>
+                  <div className="flex flex-col gap-1">
+                    <a href="tel:+919826918636" className="text-green-600 hover:text-green-700 font-semibold">
+                      +91 98269 18636
+                    </a>
+                    <a href="tel:+919752256636" className="text-green-600 hover:text-green-700 font-semibold">
+                      +91 97522 56636
+                    </a>
+                  </div>
                 </div>
               </div>
 

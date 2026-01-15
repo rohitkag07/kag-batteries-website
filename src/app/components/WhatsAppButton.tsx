@@ -2,7 +2,7 @@
 
 export default function WhatsAppButton() {
   // अपना नंबर यहां डालो – format: 91 + mobile (बिना +, space या 0)
-  const phone = '917869161842'; // ← इसे अपने actual number से बदलना मत भूलना
+  const phone = '919826918636'; // ← इसे अपने actual number से बदलना मत भूलना
   const message = encodeURIComponent('Hi, I am interested in your torch products.');
   const waLink = `https://wa.me/${phone}?text=${message}`;
 

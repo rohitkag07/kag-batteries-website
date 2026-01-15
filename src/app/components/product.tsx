@@ -283,7 +283,7 @@ export default function Products() {
                 <button
                   className="w-full py-2.5 rounded-full bg-green-500 hover:bg-green-600 text-white text-sm font-semibold shadow-sm transition"
                   onClick={() => {
-                    const phone = "917869161842";
+                    const phone = "919826918636";
                     const msg = encodeURIComponent(
                       `Hi, I want a quote for ${product.name}`
                     );
